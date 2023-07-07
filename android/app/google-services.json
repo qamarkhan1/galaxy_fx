@@ -1,0 +1,46 @@
+{
+  "project_info": {
+    "project_number": "893870174085",
+    "project_id": "fx-guru-c019b",
+    "storage_bucket": "fx-guru-c019b.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:893870174085:android:02b818b8c589418baadeec",
+        "android_client_info": {
+          "package_name": "com.galaxy.ventures"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "893870174085-2lct9mhl06kult90ctt8dn3v09o1s1nu.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD80aFItAxr9lPLvJOvrYXFEgUkv4tWZ38"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "893870174085-2lct9mhl06kult90ctt8dn3v09o1s1nu.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "893870174085-6k2si1d5qsoutlr1r3kuacst9ivlu0ui.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.fxGuru"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>893870174085-6k2si1d5qsoutlr1r3kuacst9ivlu0ui.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.893870174085-6k2si1d5qsoutlr1r3kuacst9ivlu0ui</string>
+	<key>API_KEY</key>
+	<string>AIzaSyDNodW_KJ36G5ZvmWY9gESypjCy_tPtsTs</string>
+	<key>GCM_SENDER_ID</key>
+	<string>893870174085</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.example.fxGuru</string>
+	<key>PROJECT_ID</key>
+	<string>fx-guru-c019b</string>
+	<key>STORAGE_BUCKET</key>
+	<string>fx-guru-c019b.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:893870174085:ios:bbd2314487737b4baadeec</string>
+</dict>
+</plist>
