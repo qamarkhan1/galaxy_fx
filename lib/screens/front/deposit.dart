@@ -91,7 +91,7 @@ class _DepositScreenState extends State<DepositScreen> {
                         ? CustTextField(
                             hintText: '+256788',
                             lableText: 'Phone Number',
-                            controller: amountCtrl,
+                            controller: phoneCtrl,
                           )
                         : const SizedBox.shrink(),
                     ListTile(
@@ -157,7 +157,7 @@ class _DepositScreenState extends State<DepositScreen> {
                                       textAlign: TextAlign.center),
                                   const SizedBox(height: 6),
                                   const Text(
-                                      'Fill in the amount you have sent to our merchant ID',
+                                      'Fill in the amount you have sent to our merchant ID and your phone number',
                                       textAlign: TextAlign.center),
                                   const SizedBox(height: 20),
                                   CustButton(
@@ -527,8 +527,10 @@ class _DepositScreenState extends State<DepositScreen> {
         'amount': amountCtrl.text.trim(),
         'phone_number': phoneCtrl.text.trim(),
       };
-      await allRepos.ugMobileMoney(data);
+      Map res = await allRepos.ugMobileMoney(data);
       // _uploadFxn(data);
+
+      allRepos.showFlush(res['message'], success: res['status']);
     } else {
       allRepos.showFlush('Phone is empty', success: false);
     }

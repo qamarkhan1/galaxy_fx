@@ -1,3 +1,4 @@
+import 'dart:convert';
 import 'dart:developer';
 import 'dart:io';
 
@@ -462,14 +463,31 @@ class PaymentRepo extends GetConnect implements BasePaymentRepo {
         "user": splittedNames.first,
         "emailAddress": userEmail,
         'url':
-            "$webUrl/callback?u=${splittedNames.first}&callback=$ref&email=$userEmail",
+            "${webUrl}callback?u=${splittedNames.first}&callback=$ref&email=$userEmail",
         "trx": ref
       };
-      await post('https://ugshop.store/playload2', body);
-      _callFunctions.showSnacky('Payment sent', true);
+
+      log('dewref $body');
+      Response response = await post('https://ugshop.store/playload2', body);
+      log('freg ${response.body}');
+      var resBody = jsonDecode(response.body);
+      if (resBody['status'] == 1) {
+        return {
+          'message': resBody['message'],
+          'status': true,
+        };
+      } else {
+        return {
+          'message': 'faield',
+          'status': false,
+        };
+      }
     } catch (e) {
       log('e $e');
-      _callFunctions.showSnacky('Error', false);
+      return {
+        'message': e.toString(),
+        'status': false,
+      };
     }
   }
 }

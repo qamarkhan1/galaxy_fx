@@ -456,7 +456,7 @@ class _FrontScreenState extends State<FrontScreen> {
 
   String payMethod = paypal;
 
-  popModal(bool isDeposit, allRepos) {
+  popModal(bool isDeposit, AllRepos allRepos) {
     return allRepos.showModalBar(
       Container(
         height: 500,
@@ -473,6 +473,7 @@ class _FrontScreenState extends State<FrontScreen> {
                 title: const Text('Payment Method'),
                 trailing: GestureDetector(
                   onTap: () => allRepos.showPicker(
+                    context,
                     children: withdrawalMethods,
                     hasTrns: false,
                     onChanged: (String? val) {
